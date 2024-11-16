@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/general-delivery.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black; /* Default text color */
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: rgba(70, 130, 180, 0.9); /* Steel blue */
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: white; /* Text in header remains white */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text for nav links */
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4682B4; /* Darker blue for hover */
+    color: white;
+}
+
+/* Section Styles */
+main {
+    padding: 2em;
+    text-align: center;
+    color: black; /* Ensure text is black for readability */
+}
+
+section {
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    color: black;
+}
+
+/* Section-Specific Backgrounds */
+section#food {
+    background: url('images/food-delivery.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(70, 130, 180, 0.9); /* Steel blue */
+}
+
+section#merchandise {
+    background: url('images/merchandise-delivery.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(100, 149, 237, 0.9); /* Cornflower blue */
+}
+
+section#taxi {
+    background: url('images/taxi-service.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(30, 144, 255, 0.9); /* Dodger blue */
+}
+
+section#walking {
+    background: url('images/walking-delivery.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(25, 25, 112, 0.9); /* Midnight blue */
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: black;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: black;
+}
+
+button {
+    background-color: #1E90FF; /* Dodger blue */
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4682B4; /* Steel blue for hover */
+    transform: scale(1.05);
+}
+
+/* Delivery Icons */
+.delivery-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5em 0;
+    background-color: #4682B4; /* Steel blue */
+    color: white; /* Footer text in white */
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+/* Location Section */
+section#location {
+    background: rgba(240, 248, 255, 0.9); /* Alice blue */
+    padding: 2em;
+    border: 1px solid #1E90FF; /* Dodger blue */
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+}
+
+select {
+    padding: 0.7em;
+    width: 60%;
+    margin: 0.5em 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:hover,
+select:focus {
+    border-color: #1E90FF;
+    box-shadow: inset 0px 2px 6px rgba(30, 144, 255, 0.3);
+    outline: none;
+}
+section#walking {
+    background: url('images/walking-delivery.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(25, 25, 112, 0.9); /* Midnight blue */
+}
+section#walking {
+    background: url('images/walking-delivery.jpg') no-repeat center center;
+    background-size: cover;
+    border: 1px solid rgba(25, 25, 112, 0.9); /* Midnight blue */
+}
+/* New Section for "Become a Local Rider!" */
+#local-rider {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4682B4; /* Steel blue */
+    color: white;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 10; /* Ensure it appears above other content */
+}
+
+#local-rider p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#local-rider button {
+    background-color: #1E90FF; /* Dodger blue */
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#local-rider button:hover {
+    background-color: #4682B4; /* Steel blue for hover */
+    transform: scale(1.05);
+}
+header h1 {
+    text-transform: uppercase; /* Ensure title is always in uppercase */
+}
+
+
