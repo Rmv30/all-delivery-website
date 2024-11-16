@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Become a Local Rider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ALL DELIVERY RIDER!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food.html">Food Delivery</a></li>
+                <li><a href="merchandise.html">Merchandise Delivery</a></li>
+                <li><a href="taxi.html">Taxi Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="signup">
+            <h2>Become a Local Rider</h2>
+            <p>Fill in the details below to join us as a local rider.</p>
+            <form id="signup-form" action="/submit" method="post" enctype="multipart/form-data">
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                </fieldset>
+
+                <!-- Driver's License Upload -->
+                <fieldset>
+                    <legend>Driver's License</legend>
+                    <label for="license">Upload Driver's License:</label>
+                    <input type="file" id="license" name="license" accept=".jpg, .jpeg, .png, .pdf" required>
+                </fieldset>
+
+                <!-- Address Information -->
+                <fieldset>
+                    <legend>Address</legend>
+                    <label for="address">Street Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="state">State/Province:</label>
+                    <input type="text" id="state" name="state" required>
+
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal_code" required>
+                </fieldset>
+
+                <!-- Agreement -->
+                <fieldset>
+                    <legend>Agreement</legend>
+                    <label for="agree">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        I agree to the <a href="terms.html">terms and conditions</a>.
+                    </label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>All Delivery Services &copy; 2024</p>
+    </footer>
+</body>
+</html>
